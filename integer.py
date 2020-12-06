@@ -1,3 +1,5 @@
+import os.path
+
 
 numOfFiles = input("plese input the number of files: ")
 numOfFiles = int(numOfFiles)
@@ -7,9 +9,13 @@ while numOfFiles > 0:
     stack = []
     count = 0
     found = " "
-    file = open(fileName, 'r')
-    text = file.read()
-    file.close()
+    if os.path.isfile(fileName):
+        file = open(fileName, 'r')
+        text = file.read()
+        file.close()
+    else:
+        print("Please input a valid file")
+        break
     for x in text:
         if x == '(':
             stack.append(x)
