@@ -6,4 +6,6 @@ Then you input the files one by one and check if the files have any impbalances.
 If there are any imbalances the code will tell the line and the expected character.
 If there is no imbalance the code outputs "No error found", if the file inputed is not
 a valid file then the code will exit and output "Please input a valid file".
-The porject is very similiar to project 2.
+The project is very similiar to project 2. The original project was to create a 
+hang man game using a word bank of files, however, it was changed due to being unrelated
+to the course material.
